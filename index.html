@@ -1,0 +1,213 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemple site</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <!--CSS style-->
+    <style>h2{color:red;}</style>
+    <style>h1{background-color:yellow; line-height: 100px}</style>
+  </head>
+
+
+  <body style="text-align: center; background-color:DarkSlateGrey;">
+    <header>
+      <h1>Free cheat code</h1>
+    </header>
+    <main>
+      <section>
+        <h2><i>&#128512;</i>kikikikikikiki<span>&#128512;</span></h2>
+
+        <p style="color:forestgreen ;font-size:large">Road to Neo.</p>
+
+        <br />
+        <p>
+          Un grand merci à monsieur Loki pour sa participation et son aide
+          précieuse
+        </p>
+
+
+        <!-- Ordered list  -->
+
+        <h2>Ordered list</h2>
+        <ol>
+          <li>
+            <a href="#form">Formulaire</a>
+          </li>
+          <li>zergerzg</li>
+          <li>reber</li>
+          <li>erbgerb</li>
+        </ol>
+
+
+         <!-- Unordered list  -->
+
+
+        <h2>Unordered list</h2>
+
+        <ul>
+          <li>oookkk</li>
+          <li>zegvezbv</li>
+
+
+        </ul>
+
+        <p style="border:1px solid red">Test 3</p>
+
+
+         <!-- Image (.png)  -->
+
+
+
+      </section>
+      <section>
+        <h2>Image en HTML</h2>
+        <img src="./Close beta ultra.png" height="200" alt="img d'ultra (alternative à l'image)">
+        
+        <!--l'alt de l'image est pour l'accessibilité-->
+
+
+
+
+         <!-- Tableaux  -->
+
+        <div>
+          <h4>Tableaux</h4>
+          <table
+          border="4" 
+           cellpadding="10" 
+           cellspacing="4"
+           style="text-align: center;"
+           >
+           <!-- thead est pour l'en tête du tableau-->
+            <thead><tr>
+              <th>Col 1</th>
+              <th>Col 1</th>
+              <th>Col 1</th>
+            </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="2">cell 1</td>
+                <td>cell 2</td>
+                <td>cell 3</td>
+              </tr>
+              <tr>
+                <td colspan ="2">cell 4</td>
+              </tr>
+            </tbody>
+          </table>
+        
+        </div>
+        <div>
+          <h5>Les liens</h5>
+          <a href="https://htmlcheatsheet.com" target="_blank">HTML Cheat Sheet</a>
+          <!--_blank permet d'ouvrir un nouvel onglet-->
+        </div>
+
+
+
+                                        <!--    Vidéo    -->
+
+
+        <div>
+          <h6>Vidéos</h6>
+          <video src="./video.mp4" autoplay muted loop height="250"></video>
+          <br>
+          <br>
+          <video autoplay muted loop controls height="250">
+            <source src="./video.mp4" type="video/mp4">
+            <source src="2e source" type="video/mp4">
+            Video not supported
+          </video>
+        </div>
+      </section>
+
+
+                         <!--              Formulaires          -->
+
+
+
+
+
+      <section id="form">
+        <h2 style="background-color: rgba(240, 245, 255, 0.575);">Les formulaires</h2>
+
+        <!-- balise=form; action= qu'est ce qu'il se passe quand je valide mon formulaire ? (back-end)-->
+        <form action="">
+
+          <!--"for" et "id" permettent de lier label à l'imput-->
+          <label for="name">Nom</label>
+          <input type="text" id="name" placeholder="Entrer votre nom"><br><br>
+
+          <label for="date" >Date</label>
+          <input type="date" id="date"><br><br>
+
+          <label for="number">Age</label>
+          <input type="number" id="number" placeholder="18" value="18"><br><br>
+
+        <!-- input de type select-->
+
+         <label for="gender">genre</label>
+         <select id="gender">
+         <option value="Homme">Homme</option>
+         <option value="Femme">Femme</option>
+         <option value="X">Autre</option>
+        </select>
+
+        <!--Input de type radio-->
+<div>
+  <input type="radio" name="type" id="human">
+  <label for="human">Humain</label>
+
+  <input type="radio" name="type" id="SPT">
+  <label for="SPT">Spartiate</label>
+</div> <br>
+
+
+ <!--Input de type radio-->
+
+ <div>
+  <input type="checkbox" name="CGV" id="CVG2">
+  <label for="CVG2">Accepter les conditions générales (CVG)</label> 
+  <br>
+  <br>
+
+  <textarea  cols="30" rows="10" placeholder="kikikiki"></textarea>
+  <br>
+
+<!--imput de type submit permet de valider le formulaire et lancer l'action-->
+  <br><input style="border:solid" type="submit" value="ceci est le bouton pour valider le formulaire">
+ </div>
+
+ 
+</form>
+
+<!--Ce buton ne valide pas le formulaire-->
+<button onclick="alert('Kikikikikiki')"style="background-color: rgb(244, 255, 240); color:blueviolet">ceci est un bouton</button>
+<br>
+<br>
+
+
+<!--       Fichier Audio     -->
+
+<audio autoplay loop controls muted>
+  <source src="./audio.mp3" type="audio/mp3">
+  Audio non pris en charge
+</audio>
+
+<audio></audio>
+
+
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Mon Site Web. Tous droits réservés.</p>
+      <!--mail et envoi de fichier-->
+      <a href="mailto:fs@gmail.com">Contactez moi!</a><br>
+      <a href="notice.txt" target="_blank">download notice</a>
+    </footer>
+    <script src="script.js" ></script>
+  </body>
+</html>
